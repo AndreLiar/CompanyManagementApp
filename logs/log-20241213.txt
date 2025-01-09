@@ -1,0 +1,36 @@
+2024-12-13 00:59:07.977 +01:00 [INF] Starting application
+2024-12-13 00:59:14.765 +01:00 [INF] Database migrations applied successfully.
+2024-12-13 00:59:15.382 +01:00 [INF] Database seeding completed.
+2024-12-13 01:24:55.942 +01:00 [INF] Starting application
+2024-12-13 01:24:57.838 +01:00 [INF] Database migrations applied successfully.
+2024-12-13 01:24:58.241 +01:00 [INF] Database seeding completed.
+2024-12-13 01:27:43.832 +01:00 [INF] Starting application
+2024-12-13 01:27:45.798 +01:00 [INF] Database migrations applied successfully.
+2024-12-13 01:27:46.342 +01:00 [INF] Database seeding completed.
+2024-12-13 01:32:56.615 +01:00 [INF] Starting application
+2024-12-13 01:32:58.706 +01:00 [INF] Database migrations applied successfully.
+2024-12-13 01:32:59.133 +01:00 [INF] Database seeding completed.
+2024-12-13 01:34:15.621 +01:00 [INF] Added new client with ID 8
+2024-12-13 01:34:28.267 +01:00 [INF] Updated client with ID 8
+2024-12-13 01:34:39.245 +01:00 [INF] Deleted client with ID 8
+2024-12-13 01:48:10.169 +01:00 [INF] Starting application
+2024-12-13 01:48:11.605 +01:00 [INF] Database migrations applied successfully.
+2024-12-13 01:48:11.996 +01:00 [INF] Database seeding completed.
+2024-12-13 01:49:50.170 +01:00 [INF] Starting application
+2024-12-13 01:49:51.735 +01:00 [INF] Database migrations applied successfully.
+2024-12-13 01:49:52.134 +01:00 [INF] Database seeding completed.
+2024-12-13 01:52:39.379 +01:00 [INF] Starting application
+2024-12-13 01:52:41.433 +01:00 [INF] Database migrations applied successfully.
+2024-12-13 01:52:41.828 +01:00 [INF] Database seeding completed.
+2024-12-13 01:58:56.928 +01:00 [INF] Starting application
+2024-12-13 01:58:58.809 +01:00 [INF] Database migrations applied successfully.
+2024-12-13 01:58:59.284 +01:00 [INF] Database seeding completed.
+2024-12-13 02:05:48.761 +01:00 [INF] Starting application
+2024-12-13 02:05:50.849 +01:00 [INF] Database migrations applied successfully.
+2024-12-13 02:05:51.236 +01:00 [INF] Database seeding completed.
+2024-12-13 02:06:52.942 +01:00 [INF] Starting application
+2024-12-13 02:06:54.007 +01:00 [INF] Database migrations applied successfully.
+2024-12-13 02:06:54.193 +01:00 [INF] Database seeding completed.
+2024-12-13 02:13:37.353 +01:00 [INF] Starting application
+2024-12-13 02:13:38.589 +01:00 [INF] Database migrations applied successfully.
+2024-12-13 02:13:38.748 +01:00 [INF] Database seeding completed.

@@ -1,0 +1,117 @@
+2024-12-10 02:17:15.914 +01:00 [INF] Starting application
+2024-12-10 02:17:17.326 +01:00 [INF] Database migrations applied successfully.
+2024-12-10 02:17:17.495 +01:00 [INF] Database seeding completed.
+2024-12-10 02:17:58.590 +01:00 [INF] Updated client with ID 1
+2024-12-10 02:19:11.316 +01:00 [INF] Added new client with ID 3
+2024-12-10 02:19:26.876 +01:00 [INF] Deleted client with ID 3
+2024-12-10 02:38:41.806 +01:00 [INF] Starting application
+2024-12-10 02:38:42.813 +01:00 [INF] Database migrations applied successfully.
+2024-12-10 02:38:42.958 +01:00 [INF] Database seeding completed.
+2024-12-10 02:38:59.151 +01:00 [ERR] Error retrieving all projects.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: EmployeeProject'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at ProjectService.GetAllProjectsAsync() in C:\Users\pc\Desktop\B3Projects\CompanyManagementApp\Services\ProjectService.cs:line 147
+2024-12-10 02:39:22.257 +01:00 [ERR] Error retrieving all projects.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: EmployeeProject'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at ProjectService.GetAllProjectsAsync() in C:\Users\pc\Desktop\B3Projects\CompanyManagementApp\Services\ProjectService.cs:line 147
+2024-12-10 02:40:57.731 +01:00 [ERR] Error retrieving all projects.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: EmployeeProject'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at ProjectService.GetAllProjectsAsync() in C:\Users\pc\Desktop\B3Projects\CompanyManagementApp\Services\ProjectService.cs:line 147
+2024-12-10 02:49:28.150 +01:00 [INF] Starting application
+2024-12-10 02:49:29.031 +01:00 [INF] Database migrations applied successfully.
+2024-12-10 02:49:29.398 +01:00 [INF] Database seeding completed.
+2024-12-10 02:49:45.525 +01:00 [ERR] Error retrieving all projects.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: EmployeeProject'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at ProjectService.GetAllProjectsAsync() in C:\Users\pc\Desktop\B3Projects\CompanyManagementApp\Services\ProjectService.cs:line 147
+2024-12-10 03:37:40.999 +01:00 [INF] Starting application
+2024-12-10 03:37:43.077 +01:00 [INF] Database migrations applied successfully.
+2024-12-10 03:37:43.438 +01:00 [INF] Database seeding completed.
+2024-12-10 03:38:05.051 +01:00 [ERR] Error retrieving all projects.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such column: e0.AssignedEmployeesID'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at ProjectService.GetAllProjectsAsync() in C:\Users\pc\Desktop\B3Projects\CompanyManagementApp\Services\ProjectService.cs:line 147
+2024-12-10 04:22:03.313 +01:00 [INF] Starting application
+2024-12-10 04:22:04.742 +01:00 [INF] Database migrations applied successfully.
+2024-12-10 04:22:05.171 +01:00 [INF] Database seeding completed.
+2024-12-10 04:22:40.249 +01:00 [INF] Updated client with ID 1
+2024-12-10 04:30:49.507 +01:00 [INF] Starting application
+2024-12-10 04:30:50.700 +01:00 [INF] Database migrations applied successfully.
+2024-12-10 04:30:51.093 +01:00 [INF] Database seeding completed.
+2024-12-10 04:35:27.264 +01:00 [INF] Starting application
+2024-12-10 04:35:28.892 +01:00 [INF] Database migrations applied successfully.
+2024-12-10 04:35:29.201 +01:00 [INF] Database seeding completed.
+2024-12-10 04:46:50.471 +01:00 [INF] Starting application
+2024-12-10 04:46:51.326 +01:00 [INF] Database migrations applied successfully.
+2024-12-10 04:46:51.709 +01:00 [INF] Database seeding completed.
+2024-12-10 04:53:14.896 +01:00 [INF] Starting application
+2024-12-10 04:53:15.626 +01:00 [INF] Database migrations applied successfully.
+2024-12-10 04:53:15.769 +01:00 [INF] Database seeding completed.
+2024-12-10 04:55:34.161 +01:00 [INF] Starting application
+2024-12-10 04:55:36.117 +01:00 [INF] Database migrations applied successfully.
+2024-12-10 04:55:36.503 +01:00 [INF] Database seeding completed.
+2024-12-10 04:59:52.803 +01:00 [INF] Starting application
+2024-12-10 04:59:54.211 +01:00 [INF] Database migrations applied successfully.
+2024-12-10 04:59:54.349 +01:00 [INF] Database seeding completed.

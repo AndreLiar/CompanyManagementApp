@@ -1,0 +1,6 @@
+2024-12-12 00:48:54.097 +01:00 [INF] Starting application
+2024-12-12 00:48:57.758 +01:00 [INF] Database migrations applied successfully.
+2024-12-12 00:48:58.493 +01:00 [INF] Database seeding completed.
+2024-12-12 01:40:15.089 +01:00 [INF] Starting application
+2024-12-12 01:40:16.747 +01:00 [INF] Database migrations applied successfully.
+2024-12-12 01:40:17.219 +01:00 [INF] Database seeding completed.
