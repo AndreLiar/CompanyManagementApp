@@ -29,4 +29,17 @@ Ensure the following are installed on your system:
 Using Git, clone the repository:
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/AndreLiar/CompanyManagementApp.git
+
+### Step 2:move to project root
+```bash
+cd CompanyManagementApp
+
+### Step 3: to run the application
+```bash
+ dotnet run
+
+
+
+
+
