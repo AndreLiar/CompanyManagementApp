@@ -34,7 +34,6 @@ git clone https://github.com/AndreLiar/CompanyManagementApp.git
 cd CompanyManagementApp
 
 ### Step 3: to run the application
-```bash
  dotnet run
 
 ### Step 3: credentials that canbe used to navigate through the application
