@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
-
+//access the database and interact with the Employee table
 public class EmployeeService
 {
     private readonly DataContext _context;
@@ -14,13 +14,13 @@ public class EmployeeService
     {
         return _context.Employees.ToList();
     }
-
+//add a new employee to the database
     public void AddEmployee(Employee employee)
     {
         _context.Employees.Add(employee);
         _context.SaveChanges();
     }
-
+//update an employee in the database
     public void UpdateEmployee(Employee employee)
     {
         var existingEmployee = _context.Employees.Find(employee.ID);
@@ -43,7 +43,7 @@ public class EmployeeService
             _context.SaveChanges();
         }
     }
-
+//delete an employee from the database
     public void DeleteEmployee(int employeeId)
     {
         var employee = _context.Employees.Find(employeeId);

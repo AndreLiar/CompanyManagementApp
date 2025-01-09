@@ -3,7 +3,7 @@ using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
 using System.Data;
-
+//ClientManagementForm class
 public class ClientManagementForm : Form
 {
     private readonly ClientController _clientController;
@@ -18,7 +18,7 @@ public class ClientManagementForm : Form
     private Button backButton = new Button();
 
     public event Action? BackToDashboardRequested;
-
+//constructor
     public ClientManagementForm(ClientController clientController, string role)
     {
         _clientController = clientController;
@@ -60,7 +60,7 @@ public class ClientManagementForm : Form
 
         this.Load += async (s, e) => await LoadClientsAsync();
     }
-
+//configure the button
     private void ConfigureButton(Button button, string text, Color color, bool enabled, EventHandler clickEvent)
     {
         button.Text = text;
@@ -74,7 +74,7 @@ public class ClientManagementForm : Form
         button.Enabled = enabled;
         button.Click += clickEvent;
     }
-
+//load the clients asynchronously
     public async Task LoadClientsAsync()
     {
         try
@@ -95,7 +95,7 @@ public class ClientManagementForm : Form
             MessageBox.Show($"Error loading clients: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
     }
-
+//show the client form asynchronously
     private Task ShowClientFormAsync(Client? client)
     {
         var clientForm = new ClientForm(_clientController, client);
@@ -103,7 +103,7 @@ public class ClientManagementForm : Form
         clientForm.ShowDialog();
         return Task.CompletedTask;
     }
-
+//edit the selected client asynchronously
     private async Task EditSelectedClientAsync()
     {
         if (clientsDataGridView.SelectedRows.Count > 0)
@@ -123,7 +123,7 @@ public class ClientManagementForm : Form
             MessageBox.Show("Please select a client to edit.", "No Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
     }
-
+//delete the selected client asynchronously
     private async Task DeleteSelectedClientAsync()
     {
         if (clientsDataGridView.SelectedRows.Count > 0)
@@ -167,7 +167,7 @@ public class ClientManagementForm : Form
             MessageBox.Show("Please select a client to delete.", "No Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
     }
-
+//export to pdf
     private void ExportToPdf()
     {
         using var saveFileDialog = new SaveFileDialog { Filter = "PDF files (*.pdf)|*.pdf", FileName = "Clients.pdf" };
@@ -185,7 +185,7 @@ public class ClientManagementForm : Form
 
         MessageBox.Show("PDF export complete.");
     }
-
+//export to excel
     private void ExportToExcel()
     {
         using var saveFileDialog = new SaveFileDialog { Filter = "Excel files (*.csv)|*.csv", FileName = "Clients.csv" };

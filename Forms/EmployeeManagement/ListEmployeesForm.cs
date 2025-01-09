@@ -1,7 +1,7 @@
 using System;
 using System.Drawing;
 using System.Windows.Forms;
-
+//Form to list employees
 public class ListEmployeesForm : Form
 {
     private readonly EmployeeController _employeeController;
@@ -14,7 +14,7 @@ public class ListEmployeesForm : Form
     private Button backButton = new Button();
 
     public event Action? BackToDashboardRequested;
-
+//constructor
     public ListEmployeesForm(EmployeeController employeeController, string role)
     {
         _employeeController = employeeController;
@@ -85,7 +85,7 @@ public class ListEmployeesForm : Form
         // Load employees into the grid
         LoadEmployees();
     }
-
+//style the button
     private void StyleButton(Button button, string text, bool enabled)
     {
         button.Text = text;
@@ -120,14 +120,14 @@ public class ListEmployeesForm : Form
             MessageBox.Show($"Error loading employees: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
     }
-
+//show the employee form
     private void ShowEmployeeForm(Employee? employee)
     {
         var employeeForm = new EmployeeForm(_employeeController, employee);
         employeeForm.FormClosed += (s, e) => LoadEmployees();
         employeeForm.ShowDialog();
     }
-
+//edit the selected employee
     private void EditSelectedEmployee()
     {
         if (employeesDataGridView.SelectedRows.Count > 0)
@@ -147,7 +147,7 @@ public class ListEmployeesForm : Form
             MessageBox.Show("Please select an employee to edit.", "No Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
     }
-
+//delete the selected employee
     private void DeleteSelectedEmployee()
     {
         if (employeesDataGridView.SelectedRows.Count > 0)

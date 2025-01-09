@@ -17,7 +17,7 @@ public class ClientForm : Form
     private ComboBox clientTypeComboBox = new ComboBox { Items = { "prospect", "actif", "inactif" } };
     private TextBox primaryContactTextBox = new TextBox();
     private Button saveButton = new Button { Text = "Save" };
-
+//constructor
     public ClientForm(ClientController clientController, Client? client = null)
     {
         _clientController = clientController;
@@ -26,7 +26,7 @@ public class ClientForm : Form
         InitializeComponent();
         if (client != null) PopulateFields();
     }
-
+//initialize the components of the form
    private void InitializeComponent()
 {
     this.Size = new Size(500, 600);
@@ -153,7 +153,7 @@ public class ClientForm : Form
     });
 }
 
-
+//populate the fields of the form with the client data
     private void PopulateFields()
     {
         if (_client != null)
@@ -168,7 +168,7 @@ public class ClientForm : Form
             primaryContactTextBox.Text = _client.PrimaryContact;
         }
     }
-
+//save the client data to the database
     private async Task SaveButton_ClickAsync(object? sender, EventArgs e)
     {
         // Validate mandatory fields

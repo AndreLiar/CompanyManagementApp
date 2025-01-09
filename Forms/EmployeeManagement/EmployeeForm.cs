@@ -101,7 +101,7 @@ public class EmployeeForm : Form
 
         Text = _employee == null ? "Add Employee" : "Edit Employee";
     }
-
+//save the employee
     private void SaveButton_Click(object? sender, EventArgs e)
     {
         if (decimal.TryParse(salaryTextBox?.Text, out var salary))

@@ -13,14 +13,14 @@ public class RegisterForm : Form
     private TextBox confirmPasswordTextBox = null!;
     private Button registerButton = null!;
     private Button backButton = null!;
-
+//constructor
     public RegisterForm(AuthController authController, Action showLoginView)
     {
         _authController = authController;
         _showLoginView = showLoginView;
         InitializeComponent();
     }
-
+//initialize the components of the form
     private void InitializeComponent()
 {
     this.Size = new Size(450, 350);
@@ -119,7 +119,7 @@ public class RegisterForm : Form
 
     Text = "Register";
 }
-
+//register button click event
     private void RegisterButton_Click(object? sender, EventArgs e)
     {
         if (usernameTextBox.Text == string.Empty || passwordTextBox.Text == string.Empty)

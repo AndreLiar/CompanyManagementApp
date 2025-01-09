@@ -12,27 +12,27 @@ public class DashboardForm : Form
     private ListEmployeesForm? employeeManagementForm;
     private ClientManagementForm? clientManagementForm;
     private bool _isDisposed = false; // Track if form is disposed
-
+//constructor
     public DashboardForm(IServiceProvider serviceProvider)
     {
         _serviceProvider = serviceProvider;
         mainPanel = new Panel { Dock = DockStyle.Fill };
         InitializeComponent();
     }
-
+//initialize the components of the form
     private void InitializeComponent()
     {
         this.Size = new System.Drawing.Size(800, 600);
         Controls.Add(mainPanel);
         ShowDashboardView();
     }
-
+//set the user role
     public void SetUserRole(string role)
     {
         _role = role;
         ShowDashboardView(); // Refresh dashboard based on the role
     }
-
+//
    private void ShowDashboardView()
 {
     if (_isDisposed) return;
@@ -88,7 +88,7 @@ public class DashboardForm : Form
 
     Text = "Dashboard";
 }
-
+//create a styled button
 private Button CreateStyledButton(string text, Point location)
 {
     return new Button
@@ -104,7 +104,7 @@ private Button CreateStyledButton(string text, Point location)
         FlatAppearance = { BorderSize = 0 }
     };
 }
-
+//show the employee management view
     private void ShowEmployeeManagementView()
     {
         if (_isDisposed) return;
@@ -122,7 +122,7 @@ private Button CreateStyledButton(string text, Point location)
         mainPanel.Controls.Add(employeeManagementForm);
         employeeManagementForm.Show();
     }
-
+//show the project management view
     private void ShowProjectManagementView()
     {
         if (_isDisposed) return;
@@ -140,7 +140,7 @@ private Button CreateStyledButton(string text, Point location)
         mainPanel.Controls.Add(projectManagementForm);
         projectManagementForm.Show();
     }
-
+//show the client management view
     private void ShowClientManagementView()
     {
         if (_isDisposed) return;
@@ -158,7 +158,7 @@ private Button CreateStyledButton(string text, Point location)
         mainPanel.Controls.Add(clientManagementForm);
         clientManagementForm.Show();
     }
-
+//show the user management view
     private void ShowUserManagementView()
     {
         if (_isDisposed) return;
@@ -185,7 +185,7 @@ private Button CreateStyledButton(string text, Point location)
         mainPanel.Controls.Add(adminLabel);
         mainPanel.Controls.Add(backButton);
     }
-
+//logout button click event
     private void LogoutButton_Click(object? sender, EventArgs e)
     {
         _isDisposed = false;
@@ -199,7 +199,7 @@ private Button CreateStyledButton(string text, Point location)
         var loginForm = _serviceProvider.GetRequiredService<LoginForm>();
         loginForm.Show();
     }
-
+//override the form closing event
     protected override void OnFormClosing(FormClosingEventArgs e)
     {
         foreach (Control control in mainPanel.Controls)

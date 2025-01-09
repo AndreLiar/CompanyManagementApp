@@ -121,3 +121,4 @@ C:\Users\pc\Desktop\B3Projects\CompanyManagementApp\bin\Debug\net8.0-windows\zh-
 C:\Users\pc\Desktop\B3Projects\CompanyManagementApp\bin\Debug\net8.0-windows\Serilog.dll
 C:\Users\pc\Desktop\B3Projects\CompanyManagementApp\bin\Debug\net8.0-windows\Serilog.Sinks.Console.dll
 C:\Users\pc\Desktop\B3Projects\CompanyManagementApp\bin\Debug\net8.0-windows\Serilog.Sinks.File.dll
+C:\Users\pc\Desktop\B3Projects\CompanyManagementApp\obj\Debug\net8.0-windows\CompanyManagementApp.sourcelink.json
